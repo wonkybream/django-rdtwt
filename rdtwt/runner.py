@@ -25,6 +25,7 @@ class PostgresDiscoverRunner(DiscoverRunner):
     def _setup_container(self):
         self._postgres_container.start()
         settings.DATABASES['default']['HOST'] = self._postgres_container.get_container_host_ip()
+        settings.DATABASES['default']['PORT'] = self._postgres_container.get_exposed_port(5432)
 
     def _teardown_container(self):
         self._postgres_container.stop()

@@ -8,7 +8,7 @@ This targets users who wish to forget setting up a database for tests. There's n
 
 See: [Altering settings at runtime: Django documentation](https://docs.djangoproject.com/en/3.2/topics/settings/#altering-settings-at-runtime)
 
-This test runner changes default database host dynamically, because it's quite hard to know database host before-hand in dynamic environments, for example some CI/CD runners.
+This test runner changes default database host and port dynamically, because it's quite hard to know database host before-hand in dynamic environments, for example some CI/CD runners.
 
 Still this just works and is quite simple, that's why I haven't spent that much time investigating alternative solutions. 
 
