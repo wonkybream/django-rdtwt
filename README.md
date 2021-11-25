@@ -1,5 +1,8 @@
 # django-rdtwt
 
+[![Static analysis](https://github.com/wonkybream/django-rdtwt/actions/workflows/static-analysis.yml/badge.svg?branch=main)](https://github.com/wonkybream/django-rdtwt/actions/workflows/static-analysis.yml)
+[![Tests](https://github.com/wonkybream/django-rdtwt/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/wonkybream/django-rdtwt/actions/workflows/tests.yml)
+
 *(Run Django Tests With Testcontainers)*
 
 This targets users who wish to forget setting up a database for tests. There's no manually starting up *Docker compose* or local database with this.
