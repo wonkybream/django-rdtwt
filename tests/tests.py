@@ -8,12 +8,12 @@ from rdtwt.runner import PostgresDiscoverRunner
 class SettingsStub:
     DATABASES = {
         'default': {
-            'host': '127.0.0.1'
+            'HOST': '127.0.0.1'
         }
     }
 
     def get_host_ip(self):
-        return self.DATABASES['default']['host']
+        return self.DATABASES['default']['HOST']
 
 
 class PostgresDiscoverRunnerUnitTests(SimpleTestCase):
