@@ -36,7 +36,8 @@ setup(
     ],
     install_requires=[
         'testcontainers[postgresql]',
-        'Django'
+        'Django',
+        'psycopg2-binary',
     ],
     python_requires='>=3.8',
 )
