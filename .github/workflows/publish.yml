@@ -15,7 +15,7 @@ jobs:
           python-version: 3.8
       - run: pip install --upgrade pip setuptools twine wheel
       - run: python setup.py sdist bdist_wheel
-      - run: twine --non-interactive upload dist/*
+      - run: twine upload dist/*
         env:
           TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
           TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
