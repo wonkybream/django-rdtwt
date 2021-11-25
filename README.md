@@ -2,13 +2,13 @@
 
 *(Run Django Tests With Testcontainers)*
 
-This targets users who wish to forget the setup of a database for tests. There's no manually starting up *Docker compose* or local database with this.
+This targets users who wish to forget setting up a database for tests. There's no manually starting up *Docker compose* or local database with this.
 
 **Note:**
 
 See: [Altering settings at runtime: Django documentation](https://docs.djangoproject.com/en/3.2/topics/settings/#altering-settings-at-runtime)
 
-This runner changes default database host dynamically, because it's quite hard to know database host before-hand in dynamic environments, for example some CI/CD runners.
+This test runner changes default database host dynamically, because it's quite hard to know database host before-hand in dynamic environments, for example some CI/CD runners.
 
 Still this just works and is quite simple, that's why I haven't spent that much time investigating alternative solutions. 
 
@@ -27,7 +27,7 @@ Still this just works and is quite simple, that's why I haven't spent that much 
     python manage.py test --testrunner=rdtwt.runner.PostgresDiscoverRunner
     ```
 
-Though what I really suggest is to put following in you build settings.
+Though what I really suggest is to put following in your test settings.
 
 ```python
 # RDTWT SETTINGS
@@ -35,7 +35,7 @@ RDTWT_POSTGRESQL_IMAGE = 'postgres:14.1'
 TEST_RUNNER = 'rdtwt.runner.PostgresDiscoverRunner'
 ```
 
-This makes sure that tests run against the PostgreSQL version you define. That helps to make sure your tests aren't flaky because of database version changing without your knowledge.
+This makes sure that tests run against the PostgreSQL version defined by you. It also adds up to the test confidence, at least they aren't flaky because of database version changing without your knowledge.
 
 **Example:**
 
