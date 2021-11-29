@@ -6,7 +6,7 @@ here = pathlib.Path(__file__).parent.resolve()
 
 setup(
     name='django-rdtwt',
-    version='1.0.0',
+    version='1.1.0',
     license='MIT',
     author='Sampo Lavinen',
     description='Run Django tests with testcontainers.',
@@ -28,6 +28,7 @@ setup(
         'Framework :: Django',
         'Framework :: Django :: 3.2',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Operating System :: OS Independent',
@@ -37,5 +38,5 @@ setup(
         'Django',
         'psycopg2-binary',
     ],
-    python_requires='>=3.8',
+    python_requires='>=3.6',
 )
