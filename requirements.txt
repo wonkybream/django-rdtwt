@@ -1,4 +1,4 @@
-Django==3.2.9
+Django>=2.2
 psycopg2-binary==2.9.2
 flake8==4.0.1
 testcontainers[postgresql]==3.4.2
