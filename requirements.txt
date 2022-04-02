@@ -1,4 +1,4 @@
 Django>=2.2
 psycopg2-binary==2.9.3
 flake8==4.0.1
-testcontainers[postgresql]==3.4.2
+testcontainers[postgresql]==3.5.0
