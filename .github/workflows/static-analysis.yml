@@ -17,3 +17,21 @@ jobs:
           python-version: 3.8
       - run: pip install -r requirements.txt
       - run: flake8
+  black:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2.2.2
+        with:
+          python-version: 3.8
+      - run: pip install -r requirements.txt
+      - run: black ./ --check
+  isort:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2.2.2
+        with:
+          python-version: 3.8
+      - run: pip install -r requirements.txt
+      - run: isort ./ --diff --check
