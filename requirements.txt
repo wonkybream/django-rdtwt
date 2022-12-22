@@ -3,4 +3,4 @@ psycopg2-binary==2.9.4
 flake8==6.0.0
 testcontainers[postgresql]==3.7.0
 black==22.10.0
-isort==5.10.1
+isort==5.11.4
