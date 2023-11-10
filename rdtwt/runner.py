@@ -4,7 +4,6 @@ from testcontainers.postgres import PostgresContainer
 
 
 class PostgresDiscoverRunner(DiscoverRunner):
-
     _postgres_container: PostgresContainer
 
     def __init__(self, *args, **kwargs):
