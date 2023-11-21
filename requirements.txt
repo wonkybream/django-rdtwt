@@ -1,4 +1,4 @@
-setuptools==68.2.2
+setuptools==69.0.1
 Django>=2.2
 psycopg2-binary==2.9.9
 flake8==6.1.0
