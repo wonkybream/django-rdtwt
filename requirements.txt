@@ -1,7 +1,7 @@
 setuptools==69.0.2
 Django>=2.2
 psycopg2-binary==2.9.9
-flake8==6.1.0
+flake8==7.0.0
 testcontainers[postgresql]==3.7.1
 black==23.11.0
 isort==5.12.0
