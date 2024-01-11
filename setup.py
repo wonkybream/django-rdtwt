@@ -42,5 +42,5 @@ setup(
         "Django",
         "psycopg2-binary",
     ],
-    python_requires=">=3.8",
+    python_requires=">=3.10",
 )
