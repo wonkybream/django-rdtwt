@@ -10,12 +10,21 @@ DATABASES = {
         "PASSWORD": "postgres",
         "HOST": "127.0.0.1",
         "PORT": "5432",
-    }
+    },
+    "other": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "postgres",
+        "USER": "postgres",
+        "PASSWORD": "postgres",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
+    },
 }
 
 TEST_RUNNER = "rdtwt.runner.PostgresDiscoverRunner"
 
-RDTWT_POSTGRESQL_IMAGE = "postgres:14"
+RDTWT_DATABASES = ["default", "other"]
+RDTWT_POSTGRESQL_IMAGE = "postgres:16"
 RDTWT_POSTGRESQL_USER = "postgres"
 RDTWT_POSTGRESQL_PASSWORD = "postgres"
 RDTWT_POSTGRESQL_NAME = "postgres"
