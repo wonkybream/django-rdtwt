@@ -38,9 +38,10 @@ setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        "testcontainers[postgresql]",
+        "testcontainers",
         "Django",
         "psycopg2-binary",
+        "sqlalchemy",
     ],
     python_requires=">=3.10",
 )

@@ -18,7 +18,7 @@ class PostgresDiscoverRunner(DiscoverRunner):
 
         self._postgres_container = PostgresContainer(
             image=postgresql_image,
-            user=postgresql_user,
+            username=postgresql_user,
             password=postgresql_password,
             dbname=postgresql_name,
         )
