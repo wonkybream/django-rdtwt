@@ -4,5 +4,5 @@ psycopg2-binary==2.9.9
 flake8==7.0.0
 testcontainers==4.0.0
 sqlalchemy==2.0.28
-black==23.12.1
+black==24.3.0
 isort==5.13.2
