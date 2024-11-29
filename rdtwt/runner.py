@@ -29,12 +29,12 @@ class PostgresDiscoverRunner(DiscoverRunner):
         rdtwt_databases = getattr(settings, "RDTWT_DATABASES", ["default"])
 
         for database in rdtwt_databases:
-            settings.DATABASES[database][
-                "HOST"
-            ] = self._postgres_container.get_container_host_ip()
-            settings.DATABASES[database][
-                "PORT"
-            ] = self._postgres_container.get_exposed_port(5432)
+            settings.DATABASES[database]["HOST"] = (
+                self._postgres_container.get_container_host_ip()
+            )
+            settings.DATABASES[database]["PORT"] = (
+                self._postgres_container.get_exposed_port(5432)
+            )
 
     def _teardown_container(self):
         self._postgres_container.stop()
