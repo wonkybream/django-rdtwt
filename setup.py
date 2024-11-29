@@ -6,7 +6,7 @@ here = pathlib.Path(__file__).parent.resolve()
 
 setup(
     name="django-rdtwt",
-    version="2.1.0",
+    version="3.0.0",
     license="MIT",
     author="Sampo Lavinen",
     description="Run Django tests with testcontainers.",
