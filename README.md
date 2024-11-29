@@ -1,6 +1,6 @@
 # django-rdtwt
 
-[![Static analysis](https://github.com/wonkybream/django-rdtwt/actions/workflows/static-analysis.yml/badge.svg?branch=main)](https://github.com/wonkybream/django-rdtwt/actions/workflows/static-analysis.yml)
+[![Ruff](https://github.com/wonkybream/django-rdtwt/actions/workflows/ruff.yml/badge.svg)](https://github.com/wonkybream/django-rdtwt/actions/workflows/ruff.yml)
 [![Tests](https://github.com/wonkybream/django-rdtwt/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/wonkybream/django-rdtwt/actions/workflows/tests.yml)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![PyPI](https://img.shields.io/pypi/v/django-rdtwt)](https://pypi.org/project/django-rdtwt/)
