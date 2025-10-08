@@ -2,4 +2,4 @@ setuptools==80.1.0
 Django>=4.2
 psycopg==3.2.5
 ruff==0.12.8
-testcontainers==4.12.0
+testcontainers==4.13.2
