@@ -1,4 +1,4 @@
-setuptools==84.0.0
+setuptools==84.2.1
 Django>=5.2.18
 psycopg==3.3.6
 ruff==0.16.7
