@@ -1,5 +1,5 @@
 setuptools==84.2.1
-Django>=5.2.18
+Django>=5.2.19
 psycopg==3.3.6
 ruff==0.17.4
 testcontainers==4.15.0
